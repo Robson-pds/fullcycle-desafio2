@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./db/api.db"
+}
+
+model chat {
+  id        Int      @id @default(autoincrement())
+  mensagem  String
+  createdAt DateTime @default(now())
+}

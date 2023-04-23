@@ -1,0 +1,11 @@
+###
+GET  {{host}}:{{port}}/api/chats
+Content-Type: application/json
+
+###
+POST  {{host}}:{{port}}/api/chats
+Content-Type: application/json
+
+{
+    "mensagem": "teste mensagem"
+}
